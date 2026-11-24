@@ -1,0 +1,339 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    color: #00d9ff;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #00d9ff;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #bbbbbb;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+header {
+    
+/* PROFILE PHOTO */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 20px #00d9ff;
+    display: block;
+    margin: 30px auto;
+}
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+header h2 {
+    color: #00d9ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    margin-top: 100px;
+    padding: 30px;
+    background: #111111;
+    border: 1px solid #333333;
+    border-radius: 15px;
+}
+
+#about h2 {
+    color: #00d9ff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #bbbbbb;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* SKILLS SECTION */
+
+#skills {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+#skills h2 {
+    color: #00d9ff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill-card {
+    background: #151515;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #00d9ff;
+    box-shadow: 0 0 12px #00d9ff;
+}
+
+.skill-card h3 {
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+#projects h2 {
+    color: #00d9ff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background: #151515;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.project-card h3 {
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #bbbbbb;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    color: #00d9ff;
+    font-size: 14px;
+}
+
+/* PROFILE PHOTO */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 20px #00d9ff;
+    display: block;
+    margin: 30px auto;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    margin-top: 80px;
+    padding: 30px;
+    background: #111111;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #00d9ff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #bbbbbb;
+    margin-bottom: 25px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-box a {
+    color: #00d9ff;
+    border: 1px solid #00d9ff;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    background: #00d9ff;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    color: #888888;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    #home {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #contact {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    #home {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #contact {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+}
